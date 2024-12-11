@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Vehículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Panel Izquierdo -->
+        <div class="panel-left">
+            <h2>Registrar Vehículo</h2>
+            <form id="formulario">
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" placeholder="Ejemplo: Toyota" required>
+                
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Ejemplo: Corolla" required>
+                
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" placeholder="Ejemplo: 20000" required>
+                
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" placeholder="Ejemplo: Rojo" required>
+                
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" placeholder="Ejemplo: ABC123" required>
+                
+                <label for="fechaMatriculacion">Fecha de Matriculación:</label>
+                <input type="date" id="fechaMatriculacion" name="fechaMatriculacion" required>
+                
+                <button type="submit" class="btn">Agregar Vehículo</button>
+            </form>
+        </div>
+
+        <!-- Panel Derecho -->
+        <div class="panel-right">
+            <h2>Vehículos Registrados</h2>
+            <div class="buttons">
+                <button class="btn btn-ordenar">Ordenar Alfabéticamente</button>
+                <button class="btn btn-eliminar-ultimo">Eliminar Último Vehículo</button>
+                <button class="btn btn-eliminar-matricula">Eliminar por Matrícula</button>
+                <button class="btn btn-modificar-precio">Modificar Precio</button>
+                <button class="btn btn-modificar-marca">Modificar Marca</button>
+                <!-- <button class="btn btn-modificar-modelo">Modificar Modelo</button> -->
+            </div>
+            <h3>Lista de Vehículos</h3>
+            <div id="listaVehiculos">
+                <p>No hay vehículos registrados</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

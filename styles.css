@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.panel-left, .panel-right {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel-left {
+    background-color: #333;
+    color: #fff;
+    flex: 1;
+}
+
+.panel-right {
+    background-color: #fff;
+    flex: 2;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.vehiculo {
+    margin-bottom: 40px; /* Ajusta el valor según sea necesario */
+}
